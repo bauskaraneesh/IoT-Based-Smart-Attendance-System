@@ -1,0 +1,56 @@
+function doGet(e) { 
+  Logger.log( JSON.stringify(e) );
+  var result = 'Ok';
+  if (e.parameter == 'undefined') {
+    result = 'No Parameters';
+  }
+  else {
+    var sheet_id = '****'; 	// Spreadsheet ID
+    var sheet = SpreadsheetApp.openById(sheet_id).getActiveSheet();
+    var newRow = sheet.getLastRow() + 1;						
+    var rowData = [];
+
+    var Curr_Date = new Date();
+    rowData[0] = Curr_Date; // Date in column A
+
+    var Curr_Time = Utilities.formatDate(Curr_Date, "Asia/Kolkata", 'HH:mm:ss');
+    rowData[1] = Curr_Time; // Time in column B
+
+    for (var param in e.parameter) {
+      Logger.log('In for loop, param=' + param);
+      var value = stripQuotes(e.parameter[param]);
+      Logger.log(param + ':' + e.parameter[param]);
+      switch (param) {
+        case 'data0':
+          rowData[2] = value; // Student ID in column C
+          result = 'Student Roll no. Written on column C'; 
+          break;
+        case 'data1':
+          rowData[3] = value; // Reg. no. in column D
+          result = 'PRN no. Written on column D'; 
+          break;
+        case 'data2':
+          rowData[4] = value; // Phone number in column E
+          result = 'Phone Number Written on column E'; 
+          break;
+        case 'data3':
+          rowData[5] = value; // First Name in column F
+          result = 'First Name Written on column F';
+          break;
+        case 'data4':
+          rowData[6] = value; // Last Name in column G
+          result = 'Last Name Written on column G';
+          break;
+        default:
+          result = "unsupported parameter";
+      }
+    }
+    Logger.log(JSON.stringify(rowData));
+    var newRange = sheet.getRange(newRow, 1, 1, rowData.length);
+    newRange.setValues([rowData]);
+  }
+  return ContentService.createTextOutput(result);
+}
+function stripQuotes( value ) {
+  return value.replace(/^["']|['"]$/g, "");
+}
