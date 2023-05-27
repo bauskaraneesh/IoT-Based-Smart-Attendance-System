@@ -2,7 +2,9 @@
 Create Google Sheets with name “IoT Based RFID Attendance System”.
 
 In Extension Tab Click on App Script >> And Paste the code from the the File "Google App Script"
+
 ![Picture](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/a0dfed4d-23fc-40f0-9413-8dfcf3531dee)
+
 Keep name of app script same as the google sheet name.
 
 In the 8th Line ‘var sheet_id' Paste Your sheet id “1Kv5MezWhWanOqYyCKgSoWR-2j5tlO43WbxXsO-p4urA"
@@ -12,6 +14,7 @@ Once code is pasted click on the Deploy>New Deployment> Write Description and cl
 Copy Web URL and Save it somewhere.
 
 ![Picture1](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/9419e06a-6189-4a78-a9fd-f4b1022cfb52)
+
 Once google sheet part is done 
 Install the Libraries from library Folder 
 Come back to “Write Data on RFID” code and update the code according to your Requirements 
