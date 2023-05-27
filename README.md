@@ -27,7 +27,9 @@ Before uploading update the following data
 2.	WIFI SSID
 3.	WIFI Password 
 4.	Enter Fingerprint Certificate of the Website
+
 To get certificate follow these steps
+
 1. ![Picture3](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/777bb140-e0e7-4b9a-a1c8-352035d0bb4c)
 2. ![Picture4](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/056ef1d7-0c45-457e-8728-b9d323cba87b)
 3. ![Picture5](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/1d76eba2-fe72-4f19-9b0a-8f51d329816f)
