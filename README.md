@@ -33,8 +33,7 @@ To get certificate follow these steps
 1. ![Picture3](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/777bb140-e0e7-4b9a-a1c8-352035d0bb4c)
 2. ![Picture4](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/056ef1d7-0c45-457e-8728-b9d323cba87b)
 3. ![Picture5](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/1d76eba2-fe72-4f19-9b0a-8f51d329816f)
-4. ![Picture5](https://github.com/bauskaraneesh/IoT-Based-Smart-Attendance-System/assets/132990280/66e92c31-bb63-4db6-8189-b900ac22b6f3)
-5. Enter these SHA-1 Fingerprint.
+4. Enter these SHA-1 Fingerprint.
 Once Done Upload the Code
 
 **Circuit Diagram**
